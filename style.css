@@ -11,8 +11,69 @@
     padding: 0;
 }
 
+
+/* ===== pagebody ===== */
+body {
+    background-color: #ffffff;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: Ubuntu, "Noto Sans JP", "Gill Sans", "Gill Sans MT",
+        "Trebuchet MS", sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div.container {
+    position: relative;
+    z-index: 1;
+}
+
+div.container h1 {
+    font-family: Play, sans-serif;
+}
+
+
+/* ===== header ===== */
+div.header {
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+div.header h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+/* ===== Main ===== */
+div.main {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+div.main p {
+    text-align: center;
+}
+
+
 /* ===== Canvas ===== */
 div.canvas {
     width: 801px;
     margin: 0 auto;
+}
+
+
+/* ===== footer ===== */
+div.footer {
+    height: 20px;
+    padding: 10px;
+    clear: both;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
 }
