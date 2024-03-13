@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1c68a3b5222a044976776d61813aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldTlemap: {fileID: 1571533388}
+  fieldTilemap: {fileID: 1571533388}
   fieldTiles:
   - {fileID: 11400000, guid: 6327fc4b68d5c654a916ae6fb7e33feb, type: 2}
   - {fileID: 11400000, guid: 6dfc52fcddd8acb42b361809a24ef4e3, type: 2}
