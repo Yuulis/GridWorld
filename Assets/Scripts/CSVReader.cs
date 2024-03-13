@@ -16,9 +16,15 @@ public class CSVReader : MonoBehaviour
         
     }
 
-    public List<List<int>> ReadCSV()
+
+    /// <summary>
+    /// Read field data from a CSV file.
+    /// </summary>
+    /// <returns>2D List containing CellData</returns>
+
+    public List<List<CellData>> ReadCSV()
     {
-        List<List<int>> fieldData = new();
+        List<List<CellData>> fieldData = new();
         TextAsset fieldDataCSV = Resources.Load("fieldData") as TextAsset;
 
         StringReader reader = new(fieldDataCSV.text);
@@ -31,12 +37,13 @@ public class CSVReader : MonoBehaviour
 
         foreach (string[] strs in csvData)
         {
-            List<int> list = new();
+            List<CellData> list = new();
             foreach (string str in strs)
             {
-                if (int.TryParse(str, out var s))
-                {
-                    list.Add(Int32.Parse(str));
+                if (int.TryParse(str, out var s)) 
+                { 
+
+                    list.Add(new CellData(Int32.Parse(str)));
                 }
                 else
                 {
