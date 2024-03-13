@@ -25,6 +25,9 @@ public class TilemapController : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Update fieldTilemap from information in fieldData.
+    /// </summary>
     void SetTiles()
     {
         int height = fieldData.Count;
